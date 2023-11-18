@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bg-color: #1e1e3e;
+    --text-color: #1e1e3e;
+    --main-color: #052224 ;
+    --other-color: #2a2c3dbf;
+
+    --h2-font:3.5rem;
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+}
+body{
+    background-image: url(login.jpg);
+    color: var(--text-color);
+    overflow-x: hidden;
+    margin: 0;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    margin-left: -150px;
+    color: var(--text-color);
+    font-size: 31px;
+    font-weight: 600;
+    
+}
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    position: fixed;
+    display: flex;
+
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    opacity: 0.5;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+    color: var(--main-color);
+}
+.navbar a:active{
+    opacity: 1;
+    color: var(--main-color);
+}
+.login{
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid#3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#login-icon{
+    font-size: 8px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+.login-container{
+    background-color: rgba();
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    
+}
+.contact{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    padding: 50px 0; 
+    flex-grow: 1; 
+    width: 100%; 
+    position: fixed;
+    max-width: 1200px; 
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 5rem;
+    
+}
+.left-contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    border-right: 10px;
+    
+}
+.in i{
+    color: var(--main-color);
+    opacity: 0.5;
+    font-size: 90px;
+    margin-bottom: 15px;
+    transition: all ease .40s;
+}
+.in i:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+.right-contact h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.right-contact a{
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--main-color);
+    padding: 3px 0;
+    transition: all ease .40s;
+}
+.right-contact a:hover{
+    transform: translateY(-5px);
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.right-contact p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.hero-text h3 {
+    color: var(--second-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+
+.hero-text h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-text h4 {
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 16px 45px;
+    background: #A3D7DB;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease.50s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+    transform: translate(-50%, -50%) translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+.h3{
+    color: var(--second-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
